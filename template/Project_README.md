@@ -3,3 +3,5 @@ From the deliberative process on this platform/protocol/application, we gather i
 Website link: examplewebsite.example
 
 Our open repository: examplerepo.example
+
+Contact point for collaboration: Person Name/Email
