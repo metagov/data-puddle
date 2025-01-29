@@ -1,0 +1,40 @@
+{
+  “deliberation_process: [
+    {
+      "id": Integer,
+      "created_at": String (Date in "YYYY-MM-DD" format),
+      "updated_at": String (Date in "YYYY-MM-DD" format),
+      "details": [
+        {
+          "name": String,
+          "topics": String (Comma-separated topics),
+          "country": String,
+          "city": String,
+          "region": String,
+          "purpose": String,
+          "background": String,
+          "organisation_name": String,
+          "organisation_type": String,
+          "organisation_description": String,
+          "supporters_type": Array of Strings,
+        }
+      ],
+      "participants": {
+        "demographics": {
+          "age_brackets": [
+            {
+              "label": String,
+              "count": Integer
+            }
+          ],
+          "genders": [
+            {
+              "label": String,
+              "count": Integer
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
