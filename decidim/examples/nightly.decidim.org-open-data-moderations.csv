@@ -1,0 +1,4 @@
+id;hidden_at;report_count;reported_url;reportable_type;reportable_id;reported_content;reports/reasons;reports/locale;reports/details
+3;2025-01-29 11:10:55 UTC;0;https://nightly.decidim.org/processes/stuff-midnight/f/16/proposals/8;Decidim::Proposals::Proposal;8;;"";"";""
+1;2025-01-29 11:15:50 UTC;0;https://nightly.decidim.org/processes/premium-horizon/f/7/proposals/1;Decidim::Proposals::Proposal;1;;spam;en;From the seeds
+4;2025-01-29 11:21:54 UTC;0;https://nightly.decidim.org/processes/premium-horizon/f/7/proposals/2;Decidim::Proposals::Proposal;2;;spam;en;From the seeds
