@@ -1,0 +1,61 @@
+{
+  "proposals": [
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "vote": {
+        "type": "",
+        "options": [],
+        "result": ""
+      },
+      "vote_count": 0
+    }
+  ],
+  "githubIssues": [
+    {
+      "id": "",
+      "url": "",
+      "title": "",
+      "assignee": "",
+      "created_by": "",
+      "created_at": "",
+      "updated_at": "",
+      "labels": [],
+      "org": "",
+      "repo": "",
+      "status": "",
+      "comments_count": 0
+    }
+  ],
+  "barChart": {
+    "series": [
+      {
+        "name": "",
+        "labels": [],
+        "values": []
+      }
+    ]
+  },
+  "lineGraph": {
+    "series": [
+      {
+        "name": "",
+        "labels": [],
+        "values": []
+      }
+    ]
+  },
+  "decisionLog": [
+    {
+      "id": "",
+      "date": "",
+      "short_title": "",
+      "description": "",
+      "deciding_group": "",
+      "resolution": "",
+      "supplemental_materials": [],
+      "other_notes": ""
+    }
+  ]
+}
