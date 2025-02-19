@@ -1,0 +1,129 @@
+{
+	"assemblies": [
+		{
+			"id": "string",
+			"created_at": "Date",
+			"updated_at": "Date",
+
+			"details": [
+				{
+					"name": "string",
+					"topics": "string",
+					"country": "string",
+					"city": "string",
+					"region": "string",
+					"purpose": "string",
+					"background": "string",
+					"organisation_name": "string",
+					"organisation_type": "string",
+					"organisation_description": "string",
+					"supporters_type": "string",
+					"supporters_description": "string",
+					"funders_type": "string",
+					"funders_description": "string",
+					"start_date": "Date",
+					"end_date": "Date",
+					"decision_method": "string",
+					"support_options": "string",
+					"participant_signup": "string",
+					"recruitment_method": "string",
+					"recruitment_criteria": "string"
+				}
+			],
+
+			"participants": {
+				"demographics": {
+					"age_brackets": [
+						{
+							"label": "string",
+							"count": "number"
+						}
+					],
+					"genders": [
+						{
+							"label": "string",
+							"count": "number"
+						}
+					],
+					"education_levels": [
+						{
+							"label": "string",
+							"count": "number"
+						}
+					]
+				},
+				"pre_survey_responses": [
+					{
+						"id": "string",
+						"label": "string",
+						"responses": [
+							{
+								"label": "string",
+								"count": "number",
+								"value": "number"
+							}
+						]
+					}
+				],
+				"post_survey_responses": [
+					{
+						"id": "string",
+						"label": "string",
+						"responses": [
+							{
+								"label": "string",
+								"count": "number",
+								"value": "number"
+							}
+						]
+					}
+				],
+				"deliberation_evaluation": [
+					{
+						"id": "string",
+						"label": "string",
+						"responses": [
+							{
+								"label": "string",
+								"count": "number",
+								"value": "number"
+							}
+						]
+					}
+				]
+			},
+
+			"actions": [
+				{
+					"id": "string",
+					"created_at": "Date",
+					"updated_at": "Date",
+
+					"text": "string",
+					"target_actors": [
+						{
+							"text": "string",
+							"type": "string"
+						}
+					],
+					"voting_data": {
+						"for_count": "number",
+						"against_count": "number",
+						"abstained_count": "number"
+					},
+					"tasks": [
+						{
+							"text": "string"
+						}
+					],
+					"updates": [
+						{
+							"text": "string",
+							"date": "string"
+						}
+					]
+				}
+			]
+		}
+	]
+}
