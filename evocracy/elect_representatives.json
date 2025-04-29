@@ -1,0 +1,20 @@
+{
+  "groups": [
+      [
+          {
+              "id": "string"
+          }
+      ]
+  ],
+  "ratings":
+  [
+      [
+          [
+              "number"
+          ]
+      ]
+  ],
+  "representatives_per_group": "number",
+  "allow_self_voting": "boolean",
+  "carry_empty_slots": "boolean"
+}

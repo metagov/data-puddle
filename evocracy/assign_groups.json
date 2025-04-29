@@ -1,0 +1,10 @@
+{
+  "participants": [
+      {
+          "id": "string",
+          "proposal": "string"
+      }
+  ],
+  "group_size": "number",
+  "assignment_method": "string"
+}
