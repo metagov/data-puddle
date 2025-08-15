@@ -1,0 +1,132 @@
+{
+    "Project": {
+      "user_id": "",
+      "project_name": "",
+      "date_created": 0,
+      "description": "",
+      "phases": [
+        {
+          "phase_index": 0,
+          "status": "",
+          "title": "",
+          "description": "",
+          "start_date": 0,
+          "end_date": 0,
+          "who": "",
+          "output": ""
+        }
+      ],
+      "data": {}
+    },
+    "Events": {
+      "event_name": "",
+      "type": "",
+      "description": "",
+      "summary": "",
+      "date": "",
+      "phase_index": 0,
+      "neighborhood_id": "",
+      "location": [0, 0],
+      "involved_stakeholder_ids": [],
+      "is_public_event": false,
+      "instructions": "",
+      "prompts": [],
+      "img_links": [],
+      "resource_links": []
+    },
+    "Voices": {
+      "feedback": "",
+      "is_numeric": false,
+      "is_verbatim": false,
+      "note": "",
+      "prompt": "",
+      "phase_index": 0,
+      "collection_date": 0,
+      "upload_date": 0,
+      "participant_id": "",
+      "stakeholder_id": "",
+      "event_id": "",
+      "themes": [],
+      "structural_codes": [],
+      "feedback_status": "",
+      "location": [],
+      "neighborhood_ids": [],
+      "output_ids": []
+    },
+    "SubGeographies": {
+      "sub_geography_name": "",
+      "description": "",
+      "geo_data": ""
+    },
+    "Topics": {
+      "main_topics": [
+        {
+          "name": "",
+          "definition": "",
+          "date_created": 0,
+          "last_edited": 0
+        }
+      ],
+      "other_tags": [
+        {
+          "name": "",
+          "rationale": "",
+          "date_created": 0,
+          "last_edited": 0
+        }
+      ],
+      "sub_topics": [],
+      "structural_codes": [],
+      "partner_agencies": []
+    },
+    "Outputs": {
+      "type": "",
+      "phase_index": 0,
+      "date_created": 0,
+      "date_published": 0,
+      "is_public": false,
+      "nickname": "",
+      "title": "",
+      "description": "",
+      "summary": "",
+      "notes": "",
+      "topics": [],
+      "partner_agencies": [],
+      "cited_voices": [],
+      "relevant_participants": [],
+      "relevant_stakeholders": [],
+      "neighborhood_ids": [],
+      "sparked_by": [],
+      "next_steps": [],
+      "quantitative_data": [],
+      "matrix": {},
+      "connection_to_external_projects": []
+    },
+    "Stakeholders": {
+      "name": "",
+      "description": "",
+      "neighborhood_id": "",
+      "summary": "",
+      "project_ids": [],
+      "relationship": {
+        "holder": "",
+        "date_initiated": 0,
+        "contact_history": [],
+        "last_contact": 0,
+        "notes": ""
+      }
+    },
+    "Participants": {
+      "alias": "",
+      "stakeholder_ids": [],
+      "feedback_ids": [],
+      "project_ids": [],
+      "demo_public": false,
+      "demo": {
+        "gender": "",
+        "race": "",
+        "age": ""
+      }
+    }
+  }
+  
