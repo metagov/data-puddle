@@ -1,0 +1,177 @@
+[ {
+  "@graph" : [ {
+    "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU",
+    "@type" : [ "http://www.nanopub.org/nschema#Nanopublication" ],
+    "http://www.nanopub.org/nschema#hasAssertion" : [ {
+      "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#assertion"
+    } ],
+    "http://www.nanopub.org/nschema#hasProvenance" : [ {
+      "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#provenance"
+    } ],
+    "http://www.nanopub.org/nschema#hasPublicationInfo" : [ {
+      "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#pubinfo"
+    } ]
+  } ],
+  "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#Head"
+}, {
+  "@graph" : [ {
+    "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#Evidence",
+    "@type" : [ "https://w3id.org/kpxl/gen/terms/Evidence" ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "<body>\n                <ul>\n<li><h2 id=\"summary\">Summary</h2>\n<ul>\n<li><img src=\"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmegacoglab%2FDzpmWXAzLF.png?alt=media&token=7c154199-8f2c-4220-a9ad-51f0507fcf47\" alt=\"\"> (Table 5)</li>\n</ul>\n</li>\n<li><h2 id=\"grounding-context\">Grounding Context</h2>\n<ul>\n<li>Who::<ul>\n<li><blockquote>\n<p>We recruited 139 mTurk workers (42% female, mean age = 32.6 years, SD = 9.6) for this study. To ensure quality data, all participants had to have approval rates of at least 95% with at least 100 completed HITs. Participants were paid $2.00 for about 20 minutes of participation (on average), yielding an average hourly rate of $6/hour. (p. 2721)</p>\n</blockquote>\n</li>\n</ul>\n</li>\n<li>How::<ul>\n<li>machine-generated clusters, machine-generated labels, dataset<ul>\n<li><blockquote>\n<p>We extracted solution paths for ideas for two problems: 1) new product ideas for a novel “fabric display” (fabric display problem), and 2) ideas for improving workers’ experience performing HITs on mTurk on mobile devices (improve mTurk problem). Both idea datasets were assembled from idea datasets collected in prior studies ([54] for the Fabric Display problem, and [40] for the Improve Turk problem). The ideas in those datasets were collected from mTurk workers, and the authors shared the data with us. We randomly sampled 120 ideas for each problem. (p. 2719)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>In the cluster phase, ideas are first tokenized, removing uninformative (stop) words, and then weighted using TFIDF. Each idea then is re-represented as a vector of w TFIDF weights (where w is the number words in the corpus of ideas). We then use LSI to reduce the dimensionality of the vectors. Based on prior experience clustering brainstorming ideas, our intuition is that somewhere between 15 to 25 patterns is often sufficient to adequately describe emerging solution patterns. Therefore, we set our LSI model to retain 15, 20 and 25 dimensions. For each of these parameter settings, we then identify solution paths by finding the same number of clusters of ideas (i.e., 15, 20 or 25) with the Kmeans clustering algorithm. We use the LSI dimension weights as features for the ideas. (p. 2720)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>For the label phase, we again select a method that would not require significant parameter tuning. To do this, we treat each cluster as a document, and compute TF-IDF weights for all words. We then choose the top n words with the highest TF-IDF weights within each cluster. N is determined by the average length of human labels (minus stopwords). (p. 2720)</p>\n</blockquote>\n</li>\n</ul>\n</li>\n<li>task(s)<ul>\n<li><blockquote>\n<p>two problems: 1) new product ideas for a novel “fabric display” (fabric display problem), and 2) ideas for improving workers’ experience performing HITs on mTurk on mobile devices (improve mTurk problem). (p. 2719)</p>\n</blockquote>\n</li>\n</ul>\n</li>\n<li>procedure<ul>\n<li><blockquote>\n<p>Participants generated ideas using a simple ideation interface. Inspirations (whether ideas or solution paths) were provided to participants in an “inspiration feed” in the right panel of their interface (see Figure 2). Participants could “bookmark” particular inspirations that they found helpful. No sorting and filtering options were provided. The limited sorting/filtering available in the all-ideas condition might be considered primitive, but it is actually similar to many existing platforms that might provide rudimentary filtering by very broad, pre-defined categories (that may be reused across problem). Participants in the control condition generated ideas with a simpler ideation interface that removed the inspiration feed. (p. 2721)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>After providing informed consent, participants experienced a brief tutorial to familiarize themselves with the interface. Embedded within the tutorial was an alternative uses task (where participants were asked to think of as many alternative uses as possible for a bowling pin). generated ideas for both the Fabric Display and Improve Turk problems. Participants were given 8 minutes to work on each problem, and the order of the problems was randomized across participants. Participants in the inspiration conditions received the following instructions regarding the inspirations: “Below are some inspirations to boost your creativity. Feel free to create variations on them, elaborate on them, recombine them into new ideas, or simply use them to stimulate your thinking. If you find an inspiration to be helpful for your thinking, please let us know by clicking on the star button! This will help us provide better inspirations to future brainstormers.” After completing both problems, participants then completed a brief survey with questions about demographics and the participants’ experiences during the task.Participants then (pp .2721-2722)</p>\n</blockquote>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>What:: ((pvSG_OWlN))<ul>\n<li><blockquote>\n<p>414 workers from mTurk rated the ideas for novelty and quality (p. 2722)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>Quality was operationalized as the degree to which an idea would be useful for solving the problem, assuming it was implemented (i.e., separating out concerns over feasibility), ranging from a scale of 1 (Not Useful at All) to 7 (Extremely Useful). Each worker rated a random sample of approximately 20 ideas. (p. 2722)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>While the raw inter-rater agreement was relatively low (Krippendorff’s alpha = .23 and .25, respectively), the overall aggregate measure had acceptable correspondence with each judges’ intuitions. Computing correlations between each judges’ ratings and the overall aggregate score yielded average correlations of .52 for novelty and .58 for quality. (p. 2722)</p>\n</blockquote>\n</li>\n<li><blockquote>\n<p>we normalized scores within raters (i.e., difference between rating and mean rating provide by rater, divided by the standard deviation of the raters’ ratings). (p. 2723)</p>\n</blockquote>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n\n              </body>"
+    } ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "participants who received automatically labeled clusters of ideas as inspiration generated lower quality ideas compared to receiving no external stimulation"
+    } ],
+    "http://xmlns.com/foaf/0.1/page" : [ {
+      "@id" : "https://roamresearch.com/#/app/megacoglab/page/M1fSi8xQv"
+    } ]
+  } ],
+  "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#assertion"
+}, {
+  "@graph" : [ {
+    "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#assertion",
+    "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+      "@id" : "https://orcid.org/0000-0003-3000-4160"
+    } ],
+    "https://credit.niso.org/contributor-roles/writing-original-draft" : [ {
+      "@value" : "Joel Chan"
+    } ]
+  } ],
+  "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#provenance"
+}, {
+  "@graph" : [ {
+    "@id" : "http://purl.org/dc/terms/creator",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "is created by"
+    } ]
+  }, {
+    "@id" : "http://purl.org/dc/terms/description",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "has the description"
+    } ]
+  }, {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "is a"
+    } ]
+  }, {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "has the label"
+    } ]
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#wasAttributedTo",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "is attributed to"
+    } ]
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/page",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "has more info at"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/conceptualization",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Conceptualized by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/data-curation",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Data curated by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/formal-analysis",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Formal analysis performed by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/funding-acquisition",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Funding acquired by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/investigation",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Investigated by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/methodology",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Methodology developed by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/project-administration",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Project administered by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/resources",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Resources provided by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/software",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Software developed by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/supervision",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Supervised by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/validation",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Validated by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/visualization",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Visualization created by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/writing-original-draft",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Original draft written by"
+    } ]
+  }, {
+    "@id" : "https://credit.niso.org/contributor-roles/writing-review-editing",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Reviewed and edited by"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/kpxl/gen/terms/Evidence",
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+      "@value" : "Evidence"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU",
+    "@type" : [ "https://w3id.org/kpxl/gen/terms/DiscourseGraphNanopub" ],
+    "http://purl.org/dc/terms/created" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+      "@value" : "2024-10-29T02:01:04.965Z"
+    } ],
+    "http://purl.org/dc/terms/creator" : [ {
+      "@id" : "https://orcid.org/0000-0003-3000-4160"
+    } ],
+    "http://purl.org/nanopub/x/introduces" : [ {
+      "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#Evidence"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#sig",
+    "http://purl.org/nanopub/x/hasAlgorithm" : [ {
+      "@value" : "RSA"
+    } ],
+    "http://purl.org/nanopub/x/hasPublicKey" : [ {
+      "@value" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2NYLBcZmpOkjgqLiT7hMxzRaK5KhYYHxxN2gCAMfmOaulAxAzPUNBJLIXjX3yQeIj6rAH4haWNAEUGPdiua/D+Pmu/Hrva3mK29lsWW9ajyZr0e12erDdaBw+3XfxMkKCZkLJjina6mi0W80e7Wa3+dsrypMDVl3CFYVvLsXu4lIMYqI2aVvbKyqCv6hUaWlGUip+2f84LQx/RSZGGwbBjwzKqe/Cs7frCW/lNlvsAkkst+IyFMcekEW875+rnsXP3phcP9Q1Ocu8wbnYYAu5lZPL19YFDSso2Qc5TpkXK3rawDYH36rOX8f0zBzdcbZAPx9btSCgXyqMpP8U4TCwIDAQAB"
+    } ],
+    "http://purl.org/nanopub/x/hasSignature" : [ {
+      "@value" : "HDi5CuojAHW32EOmsaS/99j5PByx//qOooAjpMAFbl1On6RgWjocvXuCvaI4UDTJpxDRsvwFH+oRzu0n8HQtk50Gp5JX0/hlG5IEE7+mG3rw/q2s6DczW30EQhRojOSQOViunr+xbgqJgU0zoWLrgBjzyUzzewrisAiwZrOjLl/4+i8X2NFGeMKgXAxMF42CaNb7WtDvvCaNNVqFyawwkQf7KlrLzTehsvFLalnvXwP3GWjRv2dsN6Svp5sYhrxTH0eTXmnbNtZE/1hsikDxeyoSVDydGwJ1BKfkmoKgKBOeYDFdn4kyC5XQBOxJwVZKOh7Fdlkzo1hNRM/ZtmLV6Q=="
+    } ],
+    "http://purl.org/nanopub/x/hasSignatureTarget" : [ {
+      "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU"
+    } ]
+  } ],
+  "@id" : "https://w3id.org/np/RAD7KegvZcc3ijwC1_FPjt6CP7t5p-sTMbQCMXoELfOqU#pubinfo"
+} ]
