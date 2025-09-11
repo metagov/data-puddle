@@ -1,0 +1,15 @@
+# See https://bitbucket.org/art-uniroma2/vocbench3-docker/src/master/
+services:
+  vocbench3:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        VB_VERSION: "14.0.0"
+        ST_VERSION: "14.0"
+    ports:
+    - "1979:1979"
+    volumes:
+     - type: bind
+       source: ./volumes/stdata
+       target: /opt/vocbench3/data
