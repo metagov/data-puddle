@@ -51,9 +51,9 @@ jobs:
           type=semver,pattern={{version}},enable={{is_tag}}
           type=semver,pattern={{major}}.{{minor}}
           type=semver,pattern={{major}}
-
+          
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: ${{ matrix.context }}
         file: ${{ matrix.dockerfile }}
