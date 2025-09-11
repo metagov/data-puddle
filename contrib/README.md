@@ -20,12 +20,13 @@ To build and distribute our ontology, we took the follwing stack:
 This is not yet define, we use github issues for now.
 
 ## Docker
-We use docker to build VocBench, using this convention: 
+We use docker to build VocBench, using this semver convention: 
 
 - `latest` is the unstable version, rebuild on `main` branch
 - `v<sem ver>` is published when we add a tag on the repository
-- `<hash>` the commit hash for PR 
+- `<pr-number>` the pr identifier 
 
+The docker images can be found in: [`ghcr.io/metagov/data-puddle/vocbench3`](https://ghcr.io/metagov/data-puddle/vocbench3)
 
 ## Local Development
 
