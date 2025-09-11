@@ -19,6 +19,14 @@ To build and distribute our ontology, we took the follwing stack:
 **Issue/tickets workflow**  
 This is not yet define, we use github issues for now.
 
+## Docker
+We use docker to build VocBench, using this convention: 
+
+- `latest` is the unstable version, rebuild on `main` branch
+- `v<sem ver>` is published when we add a tag on the repository
+- `<hash>` the commit hash for PR 
+
+
 ## Local Development
 
 - run `docker compose up`
