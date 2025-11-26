@@ -2,7 +2,10 @@ name: Build and Publish Documentation
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
