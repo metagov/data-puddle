@@ -3,8 +3,6 @@ name: Build and Publish Documentation
 on:
   push:
     branches: [ main, master ]
-    paths:
-      - 'releases/**'
   workflow_dispatch:
 
 permissions:
