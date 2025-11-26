@@ -1,0 +1,28 @@
+http:
+  routers:
+    vocbench3:
+      rule: Host(`metagov.voca.city`)
+      entryPoints:
+        - websecure
+      tls:
+        certResolver: le
+      service: vocbench3
+    vocbench3-http:
+      rule: Host(`metagov.voca.city`)
+      entryPoints:
+        - web
+      middlewares:
+        - vocbench3-redirect
+      service: vocbench3
+
+  middlewares:
+    vocbench3-redirect:
+      redirectScheme:
+        scheme: https
+
+  services:
+    vocbench3:
+      loadBalancer:
+        servers:
+          - url: http://vocbench3:1979
+

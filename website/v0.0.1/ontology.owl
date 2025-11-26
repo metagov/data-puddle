@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://metagov.org/deliberative-tools-ontology#"
+     xml:base="https://metagov.org/deliberative-tools-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://metagov.org/deliberative-tools-ontology#">
+        <owl:imports rdf:resource="https://schema.org#"/>
+        <owl:imports rdf:resource="https://www.w3.org/ns/activitystreams#"/>
+        <rdfs:label xml:lang="en">Deliberative Tools Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#electedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#electedBy">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Stakeholders"/>
+        <rdfs:range rdf:resource="https://metagov.org/deliberative-tools-ontology#DecisionInstrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#media -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#media">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Statement"/>
+        <rdfs:range rdf:resource="https://www.w3.org/ns/activitystreams#Link"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#moderationGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#moderationGuidelines">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Moderation"/>
+        <rdfs:range rdf:resource="https://www.w3.org/ns/activitystreams#Note"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#moderationJustification -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#moderationJustification">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Moderation"/>
+        <rdfs:range rdf:resource="https://www.w3.org/ns/activitystreams#Note"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#moderationOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#moderationOutcome">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Moderation"/>
+        <rdfs:range rdf:resource="https://metagov.org/deliberative-tools-ontology#ModerationOutcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#personCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#personCategory">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Person"/>
+        <rdfs:range rdf:resource="https://metagov.org/deliberative-tools-ontology#PersonCategory"/>
+        <rdfs:label xml:lang="en">A category of Person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#statementCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://metagov.org/deliberative-tools-ontology#statementCategory">
+        <rdfs:domain rdf:resource="https://metagov.org/deliberative-tools-ontology#Statement"/>
+        <rdfs:range rdf:resource="https://metagov.org/deliberative-tools-ontology#StatementCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Algorithm -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Service"/>
+        <rdfs:comment xml:lang="en">Represents an algorithm acting on any object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Banned -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Banned">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#ModerationOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Convener -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Convener">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#PersonCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#DecisionInstrument -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#DecisionInstrument">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+        <rdfs:comment xml:lang="en">Represents a mechanism by which decisions are made within the system. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Divisive -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Divisive">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#StatementCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Hidden -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Hidden">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#ModerationOutcome"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Moderation -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Moderation">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+        <rdfs:comment xml:lang="en">Represents an annotation on a statement. Describes the moderating person, moderated statement, moderation outcome, and the guideline the moderation outcome is related to. </rdfs:comment>
+        <rdfs:label xml:lang="en">Moderation Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#ModerationOutcome -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#ModerationOutcome">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Moderator -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Moderator">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#PersonCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Participant -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Participant">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#PersonCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Person -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Person"/>
+        <rdfs:comment xml:lang="en">A Person acting in a deliberative space</rdfs:comment>
+        <rdfs:label xml:lang="en">A Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#PersonCategory -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#PersonCategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+        <rdfs:comment xml:lang="en">Category of Person. eg: Participant, Convener, Moderator</rdfs:comment>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#DecisionInstrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Seed -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Seed">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#StatementCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting">
+        <rdfs:subClassOf rdf:resource="https://metagov.org/deliberative-tools-ontology#DecisionInstrument"/>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Stakeholders -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Stakeholders">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Collection"/>
+        <rdfs:comment xml:lang="en">represents the set of collection of distinct actors. </rdfs:comment>
+        <rdfs:label xml:lang="en">Stakeholders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#Statement -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#Statement">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+        <rdfs:comment xml:lang="en">Represents text, audio, image, or other form of media representing an idea, experience, opinion, and gathered through a data collection mechanism or event. </rdfs:comment>
+        <rdfs:label xml:lang="en">Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://metagov.org/deliberative-tools-ontology#StatementCategory -->
+
+
+    <owl:Class rdf:about="https://metagov.org/deliberative-tools-ontology#StatementCategory">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/activitystreams#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Collection -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Collection"/>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Link -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Link"/>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Note -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Note"/>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Object -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Object"/>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Person -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Person"/>
+    
+
+
+    <!-- https://www.w3.org/ns/activitystreams#Service -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/activitystreams#Service"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,45 @@
+#! /bin/bash
+
+# Configuration
+ONTOLOGY_LABEL="Deliberative Tools Ontology"
+
+# For each releases in ./dist/<semantic-versionned-file>.rdf run widoco  
+for file in ./dist/*.rdf; do
+  if [ ! -f "${file}" ] || [ ! -s "${file}" ]; then
+    continue
+  fi
+  echo "Processing ${file}"
+  filebase=`basename ${file}`
+  mkdir -p ./website/${filebase%.rdf}/
+  
+  # Add rdfs:label to ontology description if missing
+  if ! grep -A5 '<rdf:Description rdf:about="https://metagov.org/deliberative-tools-ontology">' "${file}" | grep -q '<rdfs:label'; then
+    echo "Adding rdfs:label to ${file}"
+    sed -i '/<owl:imports rdf:resource="https:\/\/www\.w3\.org\/ns\/activitystreams#"/a\\t<rdfs:label xml:lang="en">'"${ONTOLOGY_LABEL}"'</rdfs:label>' "${file}"
+  fi
+  
+  echo "Running widoco for ${file}"
+  docker run -ti --rm \
+    -v ./dist:/usr/local/widoco/in \
+    -v ./website/${filebase%.rdf}/:/usr/local/widoco/out \
+    ghcr.io/dgarijo/widoco:v1.4.23 -ontFile in/${filebase} -outFolder out -uniteSections -noPlaceHolderText -getOntologyMetadata -rewriteAll
+done
+
+
+# Find the most recent ontology file processed
+if [ -d "./website" ]; then
+  # Get the most recently modified directory
+  latest_dir=$(find ./website/* -maxdepth 1 -type d | head -1)
+  if [ -n "$latest_dir" ]; then
+    latest_dir=$(basename "$latest_dir")
+    # Copy the latest documentation to website/latest
+    cp -r "./website/$latest_dir" "./website/latest"
+    echo "Created website/latest from $latest_dir"
+  else
+    echo "No ontology documentation found in website directory"
+    exit 1
+  fi
+else
+  echo "Website directory not found"
+  exit 1
+fi

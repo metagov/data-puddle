@@ -1,0 +1,260 @@
+[ {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Deliberative Tools Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://schema.org#"
+  }, {
+    "@id" : "https://www.w3.org/ns/activitystreams#"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Algorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an algorithm acting on any object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "https://www.w3.org/ns/activitystreams#Service"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Banned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#ModerationOutcome"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Convener",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#PersonCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#DecisionInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a mechanism by which decisions are made within the system. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Divisive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#StatementCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Hidden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#ModerationOutcome"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Moderation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an annotation on a statement. Describes the moderating person, moderated statement, moderation outcome, and the guideline the moderation outcome is related to. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Moderation Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#ModerationOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Moderator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#PersonCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#PersonCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Person acting in a deliberative space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "A Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "https://www.w3.org/ns/activitystreams#Person"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#PersonCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category of Person. eg: Participant, Convener, Moderator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#DecisionInstrument"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Seed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#StatementCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#DecisionInstrument"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Stakeholders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "represents the set of collection of distinct actors. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stakeholders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Collection"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#Statement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents text, audio, image, or other form of media representing an idea, experience, opinion, and gathered through a data collection mechanism or event. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Statement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#StatementCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Object"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#electedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Stakeholders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#DecisionInstrument"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Statement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Link"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#moderationGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Moderation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Note"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#moderationJustification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Moderation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/activitystreams#Note"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#moderationOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Moderation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#ModerationOutcome"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#personCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "A category of Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#PersonCategory"
+  } ]
+}, {
+  "@id" : "https://metagov.org/deliberative-tools-ontology#statementCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#Statement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://metagov.org/deliberative-tools-ontology#StatementCategory"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/activitystreams#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

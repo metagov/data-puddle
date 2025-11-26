@@ -1,0 +1,164 @@
+<https://metagov.org/deliberative-tools-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://metagov.org/deliberative-tools-ontology#> <http://www.w3.org/2002/07/owl#imports> <https://schema.org#> .
+<https://metagov.org/deliberative-tools-ontology#> <http://www.w3.org/2002/07/owl#imports> <https://www.w3.org/ns/activitystreams#> .
+<https://metagov.org/deliberative-tools-ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "Deliberative Tools Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://metagov.org/deliberative-tools-ontology#electedBy
+<https://metagov.org/deliberative-tools-ontology#electedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#electedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Stakeholders> .
+<https://metagov.org/deliberative-tools-ontology#electedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://metagov.org/deliberative-tools-ontology#DecisionInstrument> .
+# 
+# https://metagov.org/deliberative-tools-ontology#media
+<https://metagov.org/deliberative-tools-ontology#media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#media> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Statement> .
+<https://metagov.org/deliberative-tools-ontology#media> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/activitystreams#Link> .
+<https://www.w3.org/ns/activitystreams#Link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://metagov.org/deliberative-tools-ontology#moderationGuidelines
+<https://metagov.org/deliberative-tools-ontology#moderationGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#moderationGuidelines> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Moderation> .
+<https://metagov.org/deliberative-tools-ontology#moderationGuidelines> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/activitystreams#Note> .
+<https://www.w3.org/ns/activitystreams#Note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://metagov.org/deliberative-tools-ontology#moderationJustification
+<https://metagov.org/deliberative-tools-ontology#moderationJustification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#moderationJustification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Moderation> .
+<https://metagov.org/deliberative-tools-ontology#moderationJustification> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/activitystreams#Note> .
+# 
+# https://metagov.org/deliberative-tools-ontology#moderationOutcome
+<https://metagov.org/deliberative-tools-ontology#moderationOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#moderationOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Moderation> .
+<https://metagov.org/deliberative-tools-ontology#moderationOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://metagov.org/deliberative-tools-ontology#ModerationOutcome> .
+# 
+# https://metagov.org/deliberative-tools-ontology#personCategory
+<https://metagov.org/deliberative-tools-ontology#personCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#personCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Person> .
+<https://metagov.org/deliberative-tools-ontology#personCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://metagov.org/deliberative-tools-ontology#PersonCategory> .
+<https://metagov.org/deliberative-tools-ontology#personCategory> <http://www.w3.org/2000/01/rdf-schema#label> "A category of Person"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#statementCategory
+<https://metagov.org/deliberative-tools-ontology#statementCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://metagov.org/deliberative-tools-ontology#statementCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://metagov.org/deliberative-tools-ontology#Statement> .
+<https://metagov.org/deliberative-tools-ontology#statementCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://metagov.org/deliberative-tools-ontology#StatementCategory> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://metagov.org/deliberative-tools-ontology#Algorithm
+<https://metagov.org/deliberative-tools-ontology#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://metagov.org/deliberative-tools-ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Service> .
+<https://www.w3.org/ns/activitystreams#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an algorithm acting on any object."@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#Banned
+<https://metagov.org/deliberative-tools-ontology#Banned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Banned> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#ModerationOutcome> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Convener
+<https://metagov.org/deliberative-tools-ontology#Convener> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Convener> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#PersonCategory> .
+# 
+# https://metagov.org/deliberative-tools-ontology#DecisionInstrument
+<https://metagov.org/deliberative-tools-ontology#DecisionInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#DecisionInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+<https://www.w3.org/ns/activitystreams#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#DecisionInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a mechanism by which decisions are made within the system. "@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#Divisive
+<https://metagov.org/deliberative-tools-ontology#Divisive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Divisive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#StatementCategory> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Hidden
+<https://metagov.org/deliberative-tools-ontology#Hidden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Hidden> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#ModerationOutcome> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Moderation
+<https://metagov.org/deliberative-tools-ontology#Moderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Moderation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+<https://metagov.org/deliberative-tools-ontology#Moderation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an annotation on a statement. Describes the moderating person, moderated statement, moderation outcome, and the guideline the moderation outcome is related to. "@en .
+<https://metagov.org/deliberative-tools-ontology#Moderation> <http://www.w3.org/2000/01/rdf-schema#label> "Moderation Object"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#ModerationOutcome
+<https://metagov.org/deliberative-tools-ontology#ModerationOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#ModerationOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Moderator
+<https://metagov.org/deliberative-tools-ontology#Moderator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Moderator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#PersonCategory> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Participant
+<https://metagov.org/deliberative-tools-ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#PersonCategory> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Person
+<https://metagov.org/deliberative-tools-ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://metagov.org/deliberative-tools-ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Person> .
+<https://www.w3.org/ns/activitystreams#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A Person acting in a deliberative space"@en .
+<https://metagov.org/deliberative-tools-ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "A Person"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#PersonCategory
+<https://metagov.org/deliberative-tools-ontology#PersonCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#PersonCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://metagov.org/deliberative-tools-ontology#PersonCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+<https://metagov.org/deliberative-tools-ontology#PersonCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of Person. eg: Participant, Convener, Moderator"@en .
+<https://metagov.org/deliberative-tools-ontology#PersonCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting
+<https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#RankedChoiceVoting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#DecisionInstrument> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Seed
+<https://metagov.org/deliberative-tools-ontology#Seed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Seed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#StatementCategory> .
+# 
+# https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting
+<https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#SimpleMajorityVoting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://metagov.org/deliberative-tools-ontology#DecisionInstrument> .
+# 
+# https://metagov.org/deliberative-tools-ontology#Stakeholders
+<https://metagov.org/deliberative-tools-ontology#Stakeholders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Stakeholders> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Collection> .
+<https://www.w3.org/ns/activitystreams#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Stakeholders> <http://www.w3.org/2000/01/rdf-schema#comment> "represents the set of collection of distinct actors. "@en .
+<https://metagov.org/deliberative-tools-ontology#Stakeholders> <http://www.w3.org/2000/01/rdf-schema#label> "Stakeholders"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#Statement
+<https://metagov.org/deliberative-tools-ontology#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+<https://metagov.org/deliberative-tools-ontology#Statement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents text, audio, image, or other form of media representing an idea, experience, opinion, and gathered through a data collection mechanism or event. "@en .
+<https://metagov.org/deliberative-tools-ontology#Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement"@en .
+# 
+# https://metagov.org/deliberative-tools-ontology#StatementCategory
+<https://metagov.org/deliberative-tools-ontology#StatementCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://metagov.org/deliberative-tools-ontology#StatementCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/activitystreams#Object> .
+# 
+# https://www.w3.org/ns/activitystreams#Collection
+# 
+# https://www.w3.org/ns/activitystreams#Link
+# 
+# https://www.w3.org/ns/activitystreams#Note
+# 
+# https://www.w3.org/ns/activitystreams#Object
+# 
+# https://www.w3.org/ns/activitystreams#Person
+# 
+# https://www.w3.org/ns/activitystreams#Service
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
