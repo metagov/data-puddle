@@ -1,5 +1,27 @@
-# See https://bitbucket.org/art-uniroma2/vocbench3-docker/src/master/
+version: "3.8"
+
 services:
+  traefik:
+    image: traefik:latest
+    command:
+      - "--providers.file.filename=/etc/traefik/conf/dynamic.yml"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.le.acme.httpchallenge=true"
+      - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.le.acme.email=hello@voca.city"
+      - "--certificatesresolvers.le.acme.storage=/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/mnt/volume_sfo2_01/traefik/acme.json:/acme.json"
+      - ./traefik.dynamic.yml:/etc/traefik/conf/dynamic.yml:ro
+    networks:
+      - web
+      - private_network
+    restart: unless-stopped
+
   vocbench3:
     build:
       dockerfile: Dockerfile
@@ -7,9 +29,20 @@ services:
       args:
         VB_VERSION: "14.0.0"
         ST_VERSION: "14.0"
-    ports:
-    - "1979:1979"
+    # no more host ports here, Traefik talks to container's 80
     volumes:
-     - type: bind
-       source: ./volumes/stdata
-       target: /opt/vocbench3/data
+      - type: bind
+        source: /mnt/volume_sfo2_01/stdata
+        target: /opt/vocbench3/data
+    networks:
+      - private_network
+    restart: unless-stopped
+    stop_grace_period: 30s
+    deploy:
+      replicas: 1
+
+networks:
+  web:
+    driver: bridge
+  private_network:
+    driver: bridge

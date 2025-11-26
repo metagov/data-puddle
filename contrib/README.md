@@ -30,12 +30,17 @@ The docker images can be found in: [`ghcr.io/metagov/data-puddle/vocbench3`](htt
 
 ## Local Development
 
-- run `docker compose up`
+- run `docker compose -f docker-compose.dev.yml up`
 - access [http://localhost:1979/vocbench3](http://localhost:1979/vocbench3)
 - create your system administrator
 - enjoy
 
 To run the documentation script over a new release: 
+- Create in vocbench3 a new version.
+- Click on `Export data` and choose: 
+   - Graphs to export: your ontology
+   - Deployment: save to file
+   - Reformatter: RDF Serializer
 - Place your file under the name: `v0.0.<my-version>.rdf`
 - run `bin/widoco`
 - open the index-en.html file on your browser.

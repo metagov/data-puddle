@@ -33,10 +33,12 @@ RUN	cd /opt/vocbench3 && \
   chmod -R u=rwX,go=rX semanticturkey ; \
 	chmod +x semanticturkey/bin/* ; \
 	echo 'semanticturkey.data.dir=../data/SemanticTurkeyData' > semanticturkey/application.properties ; \
-	rm /tmp/vocbench3-${VB_VERSION}-full.zip ; 
+	rm /tmp/vocbench3-${VB_VERSION}-full.zip
 
 WORKDIR /opt/vocbench3/semanticturkey
 
 EXPOSE 1979
+
+ENV JAVA_OPTS="-Djava.awt.headless=true -Xmx2048m -XX:+UseG1GC"
 
 ENTRYPOINT ["bin/semanticturkey.sh"]
